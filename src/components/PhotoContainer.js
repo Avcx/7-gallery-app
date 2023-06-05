@@ -1,6 +1,9 @@
 import React from "react";
 
-const PhotoContainer = () => {
+const PhotoContainer = ({data}) => {
+
+    console.log(data);
+
     return (
         <div className="photo-container">
         <h2>Results</h2>
@@ -17,10 +20,10 @@ const PhotoContainer = () => {
           <li>
             <img src="https://farm5.staticflickr.com/4425/36337012384_ba3365621e.jpg" alt="" />
           </li>
-          <li className="not-found">
+          {/* <li className="not-found">
             <h3>No Results Found</h3>
             <p>You search did not return any results. Please try again.</p>
-          </li>
+          </li> */}
         </ul>
       </div>
     )
