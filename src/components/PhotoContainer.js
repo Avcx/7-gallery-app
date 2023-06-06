@@ -1,12 +1,13 @@
 import React from "react";
 import Photo from "./Photo";
 import NoResults from "./NoResults";
+import PropTypes from "prop-types"
 
 let i = 0;
 
 const PhotoContainer = ({data, term}) => {
 
-    let resultArray = data.photo || [];
+    let resultArray = data;
     console.log(resultArray, i);
     i++
     let photos;
@@ -27,6 +28,11 @@ const PhotoContainer = ({data, term}) => {
         <ul>{photos}</ul>
       </div>
     );
+}
+
+PhotoContainer.propTypes = {
+    data: PropTypes.array.isRequired,
+    term: PropTypes.string.isRequired
 }
 
 export default PhotoContainer;

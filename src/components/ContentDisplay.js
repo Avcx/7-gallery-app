@@ -28,7 +28,7 @@ const ContentDisplay = () => {
       )
       .then((response) => {
         if (activeSearch) {
-          setPhotos(response.data.photos);
+          setPhotos(response.data.photos.photo);
           setLoading(false);
         }
       })
