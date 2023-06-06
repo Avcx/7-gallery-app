@@ -4,7 +4,7 @@ import NoResults from "./NoResults";
 
 let i = 0;
 
-const PhotoContainer = ({data}) => {
+const PhotoContainer = ({data, term}) => {
 
     let resultArray = data.photo || [];
     console.log(resultArray, i);
@@ -23,7 +23,7 @@ const PhotoContainer = ({data}) => {
     }
     return (
       <div className="photo-container">
-        <h2>Results</h2>
+        <h2>{`'${term}' Results`}</h2>
         <ul>{photos}</ul>
       </div>
     );
