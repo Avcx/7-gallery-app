@@ -14,6 +14,7 @@ const ContentDisplay = () => {
 
   useEffect(() => {
     console.log(term);
+    console.log(apiKey);
     if (term) {
       setQuery(term);
     }
@@ -42,7 +43,13 @@ const ContentDisplay = () => {
   }, [query]);
 
   return (
-    <div id="content-display">{loading ? <h3>Loading...</h3> : <PhotoContainer data={photos} term={query} />}</div>
+    <div id="content-display">
+      {loading ? (
+        <h3>Loading...</h3>
+      ) : (
+        <PhotoContainer data={photos} term={query} />
+      )}
+    </div>
   );
 };
 
