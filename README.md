@@ -16,7 +16,7 @@ If you want to view a live version of the app click the link below!
 
 ## Installation Instructions
 
-1. Download the projects
+1. Download the project files
 
 2. Make sure port 3000 is clear for the dev server to run.
 
@@ -32,4 +32,5 @@ If you want to view a live version of the app click the link below!
    ``` zsh
    npm start
    ```
-4. This will start up the dev server allowing the project to be viewed in a browser at `localhost:3000`
+
+4. This will start up the dev server allowing the project to be viewed in a browser at: `localhost:3000`
