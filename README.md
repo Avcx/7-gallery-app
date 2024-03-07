@@ -4,7 +4,7 @@ This is an application that allows its users to quickly search for images on the
 The functionality of this application was created using the React.js library.
 
 The image data is pulled from the Flickr API based on the information provided from the search bar or nav links.
-The app uses React-Router-Dom to properly route states and components to the various paths it encounters and displays a 404 page when the selected path doesn't have a route in the application.
+The app uses React-Router-Dom to properly route states and components to the various paths it encounters.
 
 ## Live Version
 
